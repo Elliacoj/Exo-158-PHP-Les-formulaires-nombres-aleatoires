@@ -23,10 +23,13 @@ http://php.net/manual/fr/function.mt-rand.php
 <body>
     <?php
         if(isset($_POST['error']) && $_POST['error'] === "1") {
-            echo "Alors, on essai de faire de la merde!!!";
+            echo "<div>Alors, on essai de faire de la merde!!!</div>";
         }
         elseif(isset($_POST['error']) && $_POST['error'] === "2") {
-            echo "L'un des 2 champs n'est pas un chiffre/nombre";
+            echo "<div>L'un des 2 champs n'est pas un chiffre/nombre</div>";
+        }
+        elseif(isset($_POST['error']) && $_POST['error'] === "3") {
+            echo "<div>L'un des 2 champs a une valeur trop grande</div>";
         }
     ?>
     <div id="container">
